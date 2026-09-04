@@ -18,14 +18,13 @@ function Home() {
 
       <main>
         <section id="home" className="hero">
-          <p className="eyebrow">Computer Science Student</p>
+          <p className="eyebrow">COMPUTER SCIENCE · SOFTWARE · DATA</p>
 
           <h1>Hi, I'm Mah Noor.</h1>
 
           <p className="hero-description">
-            Computer Science student at King's College London interested in
-            software engineering and building practical, user-focused
-            applications.
+            Computer Science student with experience across software development, 
+            data analysis and interactive application design.
           </p>
 
           <div className="hero-links">
@@ -53,9 +52,8 @@ function Home() {
               <p className="project-number">01</p>
               <h3>AI Interview Preparation Platform</h3>
               <p>
-                Full-stack platform for practising role-specific interview
-                questions, receiving AI-generated feedback and tracking
-                performance over time.
+                Full-stack interview preparation platform generating role-specific questions,
+                AI feedback and performance analytics.
               </p>
               <p className="tech-stack">
                 React · FastAPI · PostgreSQL · Python
@@ -67,8 +65,9 @@ function Home() {
               <p className="project-number">02</p>
               <h3>London Pollution Visualisation</h3>
               <p>
-                University team project for exploring London pollution data
-                through interactive visualisations and statistical analysis.
+                JavaFX data visualisation application for analysing London 
+                air-pollution trends across multiple pollutants, years and locations 
+                using interactive filtering and statistical analysis.
               </p>
               <p className="tech-stack">Java · JavaFX · Data Analysis</p>
               <Link to="/projects/london-pollution" className="project-link">
@@ -80,8 +79,8 @@ function Home() {
               <p className="project-number">03</p>
               <h3>Safari Simulation</h3>
               <p>
-                Object-oriented Java simulation developed as part of university
-                coursework.
+                Java ecosystem simulation modelling seven interacting species using 
+                object-oriented design, inheritance and dynamic environmental systems.
               </p>
               <p className="tech-stack">Java · OOP</p>
               <Link to="/projects/safari-simulation" className="project-link">
@@ -93,14 +92,13 @@ function Home() {
 
         <section id="about" className="section">
           <p className="section-label">About</p>
-          <h2>A little about me</h2>
+          <h2>About me</h2>
 
           <p className="about-text">
-            I'm a Computer Science student at King's College London with an
-            interest in software engineering, full-stack development and
-            problem solving. I enjoy turning ideas into practical applications
-            and continuously developing my technical skills through personal
-            and university projects.
+            I'm a Computer Science student with experience building projects across software 
+            development, data visualisation, simulation and full-stack systems. I enjoy 
+            solving technical problems, working with real-world data and designing 
+            applications that are practical, interactive and easy to use.
           </p>
         </section>
 

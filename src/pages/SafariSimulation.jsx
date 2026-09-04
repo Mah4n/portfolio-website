@@ -1,3 +1,9 @@
+import safariOverview from "../assets/safari/overview.png";
+import fogSafariOverview from "../assets/safari/fogOverview.png";
+import headerOverview from "../assets/safari/navBar.png";
+import oopStructure from "../assets/safari/structure.png";
+import safariVideo from "../assets/safari/simulation.mp4"
+
 import { Link } from "react-router-dom";
 
 function SafariSimulation() {
@@ -12,30 +18,34 @@ function SafariSimulation() {
       <h1>Safari Simulation</h1>
 
       <p className="tech-stack">
-        Java · Object-Oriented Programming · Inheritance · Simulation
+        Java · JavaFX . Object-Oriented Programming · Inheritance · Simulation
       </p>
 
       <section>
         <h2>Overview</h2>
 
         <p>
-          A Java-based ecosystem simulation modelling interactions between
-          multiple predator and prey species in an African safari environment.
-          The simulation combines animal behaviour, food chains, breeding,
-          environmental conditions and resource management to create a dynamic
-          population over time.
+          A Java-based ecosystem simulation modelling seven interacting animal species
+          across land and aquatic environments. The system combines three food chains,
+          day/night cycles, breeding, resource consumption, weather and disease to
+          simulate population changes over hundreds of time steps.
         </p>
+
+        <img 
+        src={safariOverview}
+        alt="Safari simulation showing land and aquatic species represented as pixels"
+        className="case-study-image"/>
       </section>
 
       <section>
         <h2>What I built</h2>
 
         <p>
-          I developed the simulation around seven animal species across both
-          land and aquatic environments, with behaviour driven by factors such
-          as hunger, thirst, age, gender, time of day and surrounding species.
-          Predators hunt competing prey while herbivores and aquatic species
-          depend on renewable environmental resources.
+          I designed the simulation around seven species with distinct behaviours,
+          movement rules and survival constraints. Animal state is influenced by
+          hunger, thirst, age, gender, activity cycle, nearby species and environmental
+          conditions, creating different behaviours for predators, herbivores and
+          aquatic animals.
         </p>
       </section>
 
@@ -44,44 +54,63 @@ function SafariSimulation() {
 
         <ul>
           <li>
-            Seven interacting species across predator, prey and aquatic
-            ecosystems.
+            Modelled seven species across three interconnected food chains.
           </li>
 
           <li>
-            Behaviour systems for hunting, movement, breeding, ageing, hunger
-            and hydration.
+            Implemented hunting, movement, breeding, ageing, hunger and hydration logic.
           </li>
 
           <li>
-            Day and night cycles affecting species activity.
+            Added day/night activity cycles with species-specific active and resting behaviour.
           </li>
 
           <li>
-            Dynamic weather including clear conditions, rain, fog and drought.
+            Simulated four weather states: clear, rain, fog and drought.
           </li>
 
           <li>
-            Disease system affecting survival, breeding and hunting success.
+            Implemented two disease types affecting survival, breeding and hunting success.
           </li>
 
           <li>
-            Growing plants and lake resources that form part of the simulation's
-            food chains.
+            Added renewable plant and lake resources to support herbivore and aquatic food chains.
           </li>
         </ul>
+
+        <img 
+        src={headerOverview}
+        alt= "Header showing information about the simulation"
+        className="case-study-image"/>
+
+        <img 
+        src={fogSafariOverview}
+        alt="Safari simulation showing land and aquatic species during foggy weather"
+        className="case-study-image"/>
       </section>
 
       <section>
         <h2>Technical highlights</h2>
 
         <p>
-          I used object-oriented design and inheritance to share common animal
-          behaviour while allowing individual species to define their own
-          movement, diet and survival rules. Environmental systems were designed
-          to interact with one another, so changes such as drought, fog or
-          disease could influence multiple parts of the simulation at once.
+          I structured the simulation using object-oriented design and inheritance,
+          with shared behaviour defined in abstract animal classes and specialised
+          logic implemented for predators, herbivores and aquatic species. This reduced
+          duplication while allowing each species to define its own movement, diet,
+          breeding and survival rules.
         </p>
+
+        <p>
+          Environmental systems were designed to interact rather than operate
+          independently. For example, fog reduces hunting success, drought increases
+          dehydration and slows plant growth, while disease affects both breeding and
+          predator performance.
+        </p>
+
+        <img 
+        src={oopStructure}
+        alt="Shows OOP structure of animal classes"
+        className="case-study-image"/>
       </section>
 
       <section>
@@ -97,20 +126,29 @@ function SafariSimulation() {
       </section>
 
       <section>
-        <h2>What I learned</h2>
+        <h2>Project video</h2>
 
         <p>
-          This project strengthened my understanding of object-oriented design,
-          inheritance and modelling complex systems in Java. It also taught me
-          how small changes in shared rules and probabilities can create
-          unexpected behaviour across an entire software system.
+          A live simulation run showing population changes, time-of-day transitions,
+          weather conditions and disease levels updating dynamically.
         </p>
+
+        <video className="case-study-video" controls muted playsInline>
+          <source src={safariVideo} type="video/mp4"/>
+          Your browser does not support video playback.
+        </video>
       </section>
 
       <section>
-        <h2>Project images</h2>
+        <h2>What I learned</h2>
 
-        <p>Project screenshots will be added here.</p>
+        <p>
+          This project strengthened my understanding of inheritance, abstraction and
+          state-driven system design in Java. It also gave me experience debugging
+          emergent behaviour, where small changes to probabilities or shared rules
+          could significantly affect population stability across the entire simulation.
+
+        </p>
       </section>
     </main>
   );
