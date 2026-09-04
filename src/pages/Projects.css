@@ -5,8 +5,6 @@
   color: var(--text);
 }
 
-/* Back link */
-
 .back-link {
   display: inline-block;
   margin-bottom: 1.5rem;
@@ -21,8 +19,6 @@
   color: var(--text);
 }
 
-/* Main heading */
-
 .case-study > h1 {
   margin: 0 0 0.6rem;
   color: var(--text);
@@ -36,9 +32,6 @@
   font-size: 0.86rem;
   font-weight: 600;
 }
-
-/* Sections */
-
 .case-study section {
   margin-bottom: 2.3rem;
 }
@@ -70,8 +63,6 @@
   line-height: 1.48;
 }
 
-/* Images */
-
 .case-study-image {
   width: min(100%, 700px);
   display: block;
@@ -85,8 +76,6 @@
   margin-top: 0.8rem;
 }
 
-/* Video */
-
 .case-study-video {
   width: min(100%, 700px);
   display: block;
@@ -95,8 +84,6 @@
   border: 1px solid var(--border);
   border-radius: 8px;
 }
-
-/* Two-image row */
 
 .image-row {
   display: grid;
@@ -110,8 +97,6 @@
   margin: 0;
 }
 
-/* Optional captions */
-
 .media-caption {
   margin-top: 0.45rem;
   color: var(--muted);
@@ -119,8 +104,6 @@
   line-height: 1.4;
   text-align: center;
 }
-
-/* Responsive */
 
 @media (max-width: 700px) {
   .case-study {

@@ -1,16 +1,45 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive personal portfolio website showcasing my software projects, technical skills and project case studies.
 
-Currently, two official plugins are available:
+## Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[mah-noor.com](https://mah-noor.com)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Compact recruiter-focused homepage
+- Links to GitHub, LinkedIn and email
+- Featured software projects
+- Live project link for my AI Interview Preparation Platform
+- Detailed case studies for selected coding projects
+- Responsive interface
+- Project screenshots and video demonstrations
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript
+- CSS
+- React Router
+
+## Projects Featured
+
+### AI Interview Preparation Platform
+Full-stack interview preparation platform generating role-specific questions, AI feedback and performance analytics.
+
+### London Pollution Visualisation
+JavaFX data visualisation application for analysing London air-pollution trends through interactive filtering and statistical analysis.
+
+### Safari Simulation
+Java ecosystem simulation modelling interacting species using object-oriented design, inheritance and dynamic environmental systems.
+
+Some project source code is not publicly available, so technical case studies and demonstrations are provided instead.
+
+## Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Mah4n/portfolio-website.git

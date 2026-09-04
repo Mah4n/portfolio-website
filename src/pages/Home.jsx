@@ -57,7 +57,7 @@ function Home() {
             <article className="project-card">
               <p className="project-number">01</p>
 
-              <h3>AI Interview Preparation Platform</h3>
+              <h3>PrepSprint</h3>
 
               <p>
                 Full-stack interview preparation platform generating

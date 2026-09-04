@@ -29,8 +29,6 @@ body {
     sans-serif;
 }
 
-/* Navbar */
-
 .navbar {
   max-width: 1100px;
   margin: 0 auto;
@@ -56,15 +54,11 @@ body {
   color: var(--text);
 }
 
-/* Main */
-
 main {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 2rem 2rem;
 }
-
-/* Hero */
 
 .hero {
   padding: 2.2rem 0 2.3rem;
@@ -95,8 +89,6 @@ main {
   line-height: 1.6;
 }
 
-/* Skills */
-
 .skills-row {
   display: flex;
   flex-wrap: wrap;
@@ -113,8 +105,6 @@ main {
   font-size: 0.8rem;
   font-weight: 600;
 }
-
-/* Projects */
 
 .projects-section {
   padding: 1.4rem 0 1rem;
@@ -193,8 +183,6 @@ main {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-
-/* Responsive */
 
 @media (max-width: 900px) {
   .projects-grid {
