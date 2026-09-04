@@ -6,7 +6,7 @@ function Home() {
     <>
       <header className="navbar">
         <nav>
-          <a href="mailto:YOUR_EMAIL">Email</a>
+          <a href="mailto:info@mah-noor.com">Email</a>
 
           <a
             href="https://linkedin.com/in/mah4n"
@@ -68,7 +68,7 @@ function Home() {
                 React · FastAPI · PostgreSQL · Python
               </p>
 
-              <a href="#" className="project-link">
+              <a href="https://prepsprint.mah-noor.com/login" className="project-link">
                 View live project ↗
               </a>
             </article>
