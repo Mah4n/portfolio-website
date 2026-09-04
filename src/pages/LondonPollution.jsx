@@ -4,6 +4,7 @@ import filter1 from "../assets/london-pollution/filtering1.png";
 import filter2 from "../assets/london-pollution/filtering2.png";
 import statsVideo from "../assets/london-pollution/statisticsVideo.mp4"
 
+import "./Projects.css"
 import { Link } from "react-router-dom";
 
 function LondonPollution() {
@@ -12,8 +13,6 @@ function LondonPollution() {
       <Link to="/" className="back-link">
         ← Back to portfolio
       </Link>
-
-      <p className="section-label">Project Case Study</p>
 
       <h1>London Pollution Visualisation</h1>
 
@@ -34,7 +33,7 @@ function LondonPollution() {
 
         <img 
         src={homePage}
-        atl="London air pollution application home page"
+        alt="London air pollution application home page"
         className="case-study-image"/>
       </section>
 
@@ -99,15 +98,17 @@ function LondonPollution() {
           between pollutant types.
         </p>
 
-        <img 
-        src={filter1}
-        alt="Shows Pollutant Type, City and Year filters from Statistics Page"
-        className="case-study-image"/>
+        <div className="image-row">
+          <img 
+          src={filter1}
+          alt="Shows Pollutant Type, City and Year filters from Statistics Page"
+          className="case-study-image"/>
 
-        <img 
-        src={filter2}
-        alt="Shows advanced filters from Statistics Page"
-        className="case-study-image"/>
+          <img 
+          src={filter2}
+          alt="Shows advanced filters from Statistics Page"
+          className="case-study-image"/>
+        </div>
       </section>
 
       <section>

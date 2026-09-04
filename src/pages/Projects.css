@@ -1,0 +1,154 @@
+.case-study {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1.8rem 1.75rem 2.8rem;
+  color: var(--text);
+}
+
+/* Back link */
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--text);
+}
+
+/* Main heading */
+
+.case-study > h1 {
+  margin: 0 0 0.6rem;
+  color: var(--text);
+  font-size: clamp(2.3rem, 5vw, 3.6rem);
+  line-height: 1.05;
+}
+
+.case-study > .tech-stack {
+  margin: 0 0 2rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+/* Sections */
+
+.case-study section {
+  margin-bottom: 2.3rem;
+}
+
+.case-study section h2 {
+  margin: 0 0 0.7rem;
+  color: var(--text);
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.case-study section p {
+  margin: 0 0 0.85rem;
+  max-width: 760px;
+  color: var(--text-soft);
+  font-size: 0.96rem;
+  line-height: 1.58;
+}
+
+.case-study section ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.case-study section li {
+  margin-bottom: 0.4rem;
+  color: var(--text-soft);
+  font-size: 0.94rem;
+  line-height: 1.48;
+}
+
+/* Images */
+
+.case-study-image {
+  width: min(100%, 700px);
+  display: block;
+  margin: 1rem auto 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.case-study-image + .case-study-image {
+  margin-top: 0.8rem;
+}
+
+/* Video */
+
+.case-study-video {
+  width: min(100%, 700px);
+  display: block;
+  margin: 1rem auto 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* Two-image row */
+
+.image-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.image-row .case-study-image {
+  width: 100%;
+  margin: 0;
+}
+
+/* Optional captions */
+
+.media-caption {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  .case-study {
+    padding: 1.3rem 1.15rem 2.3rem;
+  }
+
+  .back-link {
+    margin-bottom: 1.2rem;
+  }
+
+  .case-study > .tech-stack {
+    margin-bottom: 1.6rem;
+  }
+
+  .case-study section {
+    margin-bottom: 1.8rem;
+  }
+
+  .case-study section h2 {
+    font-size: 1.3rem;
+  }
+
+  .case-study section p,
+  .case-study section li {
+    font-size: 0.92rem;
+  }
+
+  .image-row {
+    grid-template-columns: 1fr;
+  }
+}

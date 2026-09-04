@@ -4,6 +4,7 @@ import headerOverview from "../assets/safari/navBar.png";
 import oopStructure from "../assets/safari/structure.png";
 import safariVideo from "../assets/safari/simulation.mp4"
 
+import "./Projects.css"
 import { Link } from "react-router-dom";
 
 function SafariSimulation() {
@@ -13,12 +14,10 @@ function SafariSimulation() {
         ← Back to portfolio
       </Link>
 
-      <p className="section-label">Project Case Study</p>
-
       <h1>Safari Simulation</h1>
 
       <p className="tech-stack">
-        Java · JavaFX . Object-Oriented Programming · Inheritance · Simulation
+        Java · JavaFX · Object-Oriented Programming · Inheritance · Simulation
       </p>
 
       <section>
@@ -78,15 +77,17 @@ function SafariSimulation() {
           </li>
         </ul>
 
-        <img 
-        src={headerOverview}
-        alt= "Header showing information about the simulation"
-        className="case-study-image"/>
+        <div className="image-row">
+          <img 
+          src={fogSafariOverview}
+          alt="Safari simulation showing land and aquatic species during foggy weather"
+          className="case-study-image"/>
 
-        <img 
-        src={fogSafariOverview}
-        alt="Safari simulation showing land and aquatic species during foggy weather"
-        className="case-study-image"/>
+          <img 
+          src={headerOverview}
+          alt= "Header showing information about the simulation"
+          className="case-study-image"/>
+        </div>
       </section>
 
       <section>
